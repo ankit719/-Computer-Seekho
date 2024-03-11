@@ -1,0 +1,22 @@
+
+.form-container {
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: auto; /* Center the form horizontally */
+  }
+  
+  /* Style for form labels */
+  .form-label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Add space below labels */
+  }
+  
+  
+  .form-input {
+    width: 100%; /* Make inputs full-width */
+    padding: 8px; /* Add padding */
+    margin-bottom: 10px; /* Add space below inputs */
+    box-sizing: border-box; /* Include padding and border in input's total width */
+  }
+  
+ 
+  

@@ -1,0 +1,200 @@
+/* Navbar.css */
+
+* {
+  box-sizing: border-box; /* Ensure that padding and border are included in the total width and height */
+}
+
+body {
+  margin: 0; /* Resetting the body margin to ensure no unexpected spacing */
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+ 
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 98%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(100, 97, 97, 0.4);
+  color: white;
+  padding: 0.8rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+
+  margin: 6vh 1%; /* Adjusted margin to zero */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto; /* Move the navbar items to the right */
+}
+
+.navbar-item {
+  margin-right: 1rem;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-item a:hover {
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #555;
+}
+
+.active-link {
+  background-color: #555;
+  font-weight: bold;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+@media (max-width: 768px) {
+
+  
+.navbar-dropdown .dropdown-list {
+  font-size: 1.2rem;
+  width: 250%;
+}
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color:#011726;
+    width: 100%;
+    border: 2px solid#555; /* Border with color */
+   
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle box shadow */
+    transition: transform 0.3s ease; /* Smooth transition for better user experience */
+    transform: translateY(-20px); /* Initially move the menu up to create a nice entrance effect */
+  }
+
+  .navbar-list.mobile {
+    display: flex;
+    transform: translateY(0); /* Bring the menu down when displayed */
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+    padding: 10px; /* Add some padding for better spacing */
+  }
+
+  .navbar-item a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbar-item a:hover {
+    background-color: #555; /* Darker color on hover */
+  }
+
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.4s;
+  }
+
+  .bar.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+
+/* Add these styles to integrate the custom dropdown with your existing styles */
+
+.navbar-dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.navbar-dropdown .dropdown-title {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.navbar-dropdown .dropdown-list {
+  
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150%;
+  background-color:#011726;
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  
+}
+
+.navbar-dropdown .dropdown-item {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-dropdown .dropdown-list a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-dropdown .dropdown-list a:hover {
+  background-color: #555;
+}
+
+.navbar-dropdown:hover .dropdown-list {
+  display: block;
+}

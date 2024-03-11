@@ -1,0 +1,14 @@
+.marquee-header {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 95%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    
+  }
+  
+  marquee {
+    width: 1000%;
+  }
+  

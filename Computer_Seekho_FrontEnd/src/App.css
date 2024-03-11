@@ -1,0 +1,93 @@
+/* App.css */
+
+.app-container {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure the container takes at least the full viewport height */
+}
+
+body {
+
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.banner-container {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+ 
+}
+
+.banner {
+  width: 100%;
+  height: 60vh; /* Home page height */
+  background-position: center;
+  background-size: cover;
+  background-image: url('../public/images/HomeBanner.jpg')
+}
+
+.other-banner {
+  width: 100%;
+  height: 45vh; /* Other pages height */
+  background-image: url('../public/images/banner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.marquee {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar {
+  color: #fff;
+}
+
+.content {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: #0c0c0c;
+}
+
+footer {
+ 
+  background-color: #f0f0f0; /* Set a background color or customize as needed */
+  padding: 10px;
+  text-align: center;
+}
+
+.home-banner-header {
+  position: absolute;
+  top: 60%;
+  left: 40% ;
+  transform: translateY(-50%);
+  width: 60%;
+  text-align: center;
+  color: #fff;
+  padding: 5%;
+  font-size: 500%; /* Adjust the font size as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add a subtle text shadow for better visibility */
+}
+
+@media (max-width: 1200px) {
+  .home-banner-header {
+    font-size: 400%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .home-banner-header {
+    font-size: 300%;
+  }
+}

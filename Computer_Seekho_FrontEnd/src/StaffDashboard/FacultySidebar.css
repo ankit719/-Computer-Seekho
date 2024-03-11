@@ -1,0 +1,58 @@
+
+/* Sidebar.css */
+
+.sidebarF {
+    height:85%;
+    width: 20%;
+    position: fixed;
+    top: 13vh;
+    left:1.2%;
+    border-radius: 10px;
+   
+    background-color:#0e233e;
+    display: flex;
+    color: #605d5d;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .sidebarF ul {
+    list-style-type: none;
+    padding: 0;
+    color: #fff;
+    margin: 10px;
+  }
+  
+  .sidebarF li {
+    margin-bottom: 10px;
+    text-align: center;
+    
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .sidebarF li:hover {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #555;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    margin-bottom: 0;
+  }

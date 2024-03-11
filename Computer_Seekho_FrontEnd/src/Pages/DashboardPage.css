@@ -1,0 +1,22 @@
+/* DashboardPage.css */
+.body{
+  background-color: #9b0404;
+}
+/* Container for the entire navbar */
+.navbar-container {
+    
+    color: white;
+    padding: 10px;
+  }
+  
+  /* Styles for individual navbar links */
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .navbar-link:hover {
+    color: lightgray;
+  }
+  

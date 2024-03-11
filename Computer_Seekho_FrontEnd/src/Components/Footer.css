@@ -1,0 +1,21 @@
+/* Footer.css */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 5vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 9%; /* Adjust the height as needed */
+  }
+  
+  .info {
+    margin-bottom: 10px;
+  }
+  
+  .copyRight {
+    margin-top: 10px;
+  }
+  
